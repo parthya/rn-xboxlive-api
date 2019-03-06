@@ -1,8 +1,8 @@
-import * as request from 'request';
+import * as request from 'superagent';
 import * as XboxLiveAPIError from './errors';
 import * as HTTPStatusCodes from 'http-status-codes';
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import { readFileSync } from 'react-native-fs';
+import { join } from 'react-native-path';
 
 import {
 	IRequestHeaders,
