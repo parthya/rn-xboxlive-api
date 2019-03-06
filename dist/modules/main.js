@@ -8,11 +8,11 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const request = require("request");
+const request = require("superagent");
 const XboxLiveAPIError = require("./errors");
 const HTTPStatusCodes = require("http-status-codes");
-const fs_1 = require("fs");
-const path_1 = require("path");
+const fs_1 = require("react-native-fs");
+const path_1 = require("react-native-path");
 const __typings__1 = require("./__typings__");
 const { version } = JSON.parse(fs_1.readFileSync('package.json', 'utf-8'));
 const USER_AGENT = `Mozilla/5.0 (XboxReplay; XboxLiveAPI ${version}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36`;
